@@ -33,3 +33,7 @@ jobs:
       run: |
         # stop the build if there are Python syntax errors or undefined names
         flake8 . --count --show-source --statistics
+    - name: flake8 Lint
+      uses: py-actions/flake8@v2
+      with:
+        ignore: "F401"
