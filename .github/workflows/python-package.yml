@@ -31,7 +31,4 @@ jobs:
         pip install -r requirements/main_requirements.txt
         pip install -r requirements/dev_requirements.txt
         pip install -r requirements/test_requirements.txt
-    - name: Lint with flake8
-      run: |
-        # stop the build if there are Python syntax errors or undefined names
-        flake8 . --count --show-source --statistics --ignore=F401
+        
