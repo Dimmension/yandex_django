@@ -24,6 +24,7 @@ jobs:
     - name: Install Dependencies
       run: |
         python -m pip install --upgrade pip
+        pip install -r requirements/main_requirements.txt
     - name: Run Tests
       run: |
-        python manage.py test
+        python lyceum/manage.py test
