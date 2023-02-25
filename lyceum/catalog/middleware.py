@@ -4,7 +4,6 @@ class SimpleMiddleware:
         self.all_request = 0
         # One-time configuration and initialization.
 
-
     def __call__(self, request):
         # Code to be executed for each request before
         # the view (and later middleware) are called.

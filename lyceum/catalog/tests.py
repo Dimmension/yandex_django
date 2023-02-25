@@ -3,9 +3,8 @@ from parameterized import parameterized
 
 
 class StaticURLTests(TestCase):
-
     def test_catalog_endpoint(self):
-        response = Client.get('/catalog/')
+        response = Client.get("/catalog/")
         self.assertEqual(response.status_code, 200)
 
     @parameterized.expand(
